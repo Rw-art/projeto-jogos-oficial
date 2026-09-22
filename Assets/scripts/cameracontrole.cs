@@ -7,15 +7,19 @@ public class cameracontrole : MonoBehaviour
 
     void Start()
     {
-        PlayerPosition = PlayerTransform.position;
-        transform.position = new Vector3(PlayerPosition.x, PlayerPosition.y, transform.position.z);
+        if(PlayerTransform !=null){
+            PlayerPosition = PlayerTransform.position;
+            transform.position = new Vector3(PlayerPosition.x, PlayerPosition.y, transform.position.z);
+    }
     }
 
     // Update is called once per frame
     void Update()
     {
-        PlayerPosition = PlayerTransform.position;
-        transform.position = new Vector3(PlayerPosition.x, PlayerPosition.y, transform.position.z);
+        if(PlayerTransform !=null){
+            PlayerPosition = PlayerTransform.position;
+            transform.position = new Vector3(PlayerPosition.x, PlayerPosition.y, transform.position.z);
+    }
     }
         
     }
